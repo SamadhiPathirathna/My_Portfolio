@@ -1,502 +1,643 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <meta name="description" content="Samadhi Pathirathna - UI/UX Designer & Frontend Developer Portfolio" />
+    <title>Samadhi Pathirathna | UI/UX Designer</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <nav id="desktop-nav">
-      <div class="logo">Samadhi Pathirathna</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">
+            <span class="logo-name">Samadhi</span>
+            <span class="logo-title">Software Develper</span>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Samadhi Pathirathna</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">
+            <span class="logo-name">Samadhi</span>
+            <span class="logo-title">UI/UX Designer</span>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()" aria-expanded="false" tabindex="0"
+                onkeydown="handleKeyDown(event)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-      </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/1.jpg" alt="Profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Samadhi Pathirathna</h1>
-        <p class="section__text__p2">Frontend Developer & UI/UX Desginer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="window.location.href='#contact'">
-            Contact Info
-          </button>
+        <div class="section__pic-container">
+            <div class="profile-img-wrapper">
+                <img src="./assets/1.jpg" alt="Samadhi Pathirathna profile picture" />
+            </div>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/SamadhiPathirathna'"
-          />
+        <div class="section__text">
+            <div class="intro-animation">
+              
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Samadhi Pathirathna</h1>
+                <div class="typewriter">
+                    <p class="section__text__p2">UI/UX Designer & Frontend Developer</p>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    <i class="fas fa-download"></i> Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="window.location.href='#contact'">
+                    <i class="fas fa-envelope"></i> Contact Me
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin social-icon"></i>
+                </a>
+                <a href="https://github.com/SamadhiPathirathna" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Profile">
+                    <i class="fab fa-github social-icon"></i>
+                </a>
+                <a href="mailto:samadhipathirathna@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope social-icon"></i>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container about-image">
+                <div class="design-element"></div>
+                
+                <div class="design-element design-element-2"></div>
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fas fa-laptop-code icon"></i>
+                        <h3>Experience</h3>
+                        <p>6+ months<br />UI/UX Designer and Business Analyst</p>
+                    </div>
+                    <div class="details-container">
+                        <i class="fas fa-chart-line icon"></i>
+                        <h3>Experience</h3>
+                        <p>6+ months<br />Trainee Digital Media Executive</p>
+                    </div>
+                </div>
+                <div class="about-containers">
+                    <div class="details-container">
+                        <i class="fas fa-graduation-cap icon"></i>
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree<br />Specialized Information Technology</p>
+                    </div>
+                    <div class="details-container">
+                        <i class="fas fa-award icon"></i>
+                        <h3>Education</h3>
+                        <p>Diploma<br />Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        As an IT graduate with specialized experience in UI/UX design, business analysis, and full-stack
+                        development,
+                        I bring a unique blend of technical skills and creative vision to every project. My internship at the
+                        Bank of Ceylon
+                        provided me valuable experience in digital transformation initiatives.
+                    </p>
+                    <p>
+                        I'm proficient in React Native, Node.js, MongoDB, and have mastered design tools like Figma and Power
+                        BI.
+                        My passion lies in creating user-centric solutions that blend aesthetics with functionality.
+                        I'm committed to continuous learning and eager to apply my diverse skillset in a professional
+                        environment.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>6 months <br />UI/UX Desginer and Business Analyst</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>6 months <br />Trainee Digital Media Executive</p>
-            </div>
-          </div>
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />Specialized Information Technology</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Diploma<br />Information Technology</p>
-            </div>
-          </div>
-          
-          <br />
-          <div class="text-container">
-            <p>
-              IT graduates with experience in UI/UX design, business analysis, and full-stack development. 
-              I interned at the Bank of Ceylon, contributing to digital transformation projects. I am skilled in React Native,
-               Node.js, MongoDB, Figma, and Power BI, with a strong foundation in web development. 
-              I am passionate about building user-centric solutions and eager to apply my skills in a professional environment. 
-            </p>
-          </div>
+        <div class="scroll-btn">
+            <a href="#experience" aria-label="Scroll to Skills section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="window.location.href='#experience'"
-      />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Software Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Expertise</h1>
+        <div class="experience-details-container">
+            <div class="about-containers skills-container">
+                <div class="details-container skill-section">
+                    <h2 class="experience-sub-title">Software Development</h2>
+                    <div class="article-container">
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div>
+                                <h3>HTML</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div>
+                                <h3>CSS</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div>
+                                <h3>React Native</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div>
+                                <h3>Node JS</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div>
+                                <h3>Express JS</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Git</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div>
+                                <h3>MongoDB</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+                <div class="details-container skill-section">
+                    <h2 class="experience-sub-title">UI/UX Design</h2>
+                    <div class="article-container">
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-figma"></i>
+                            </div>
+                            <div>
+                                <h3>Figma</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                </div>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <div>
+                                <h3>Mock Flow</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <div>
+                                <h3>Wix Studio</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3"></i>
+                            </div>
+                            <div>
+                                <h3>Material UI</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-sitemap"></i>
+                            </div>
+                            <div>
+                                <h3>Miro</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div>
+                                <h3>Framer</h3>
+                                <div class="skill-level">
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot active"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                    <span class="skill-dot"></span>
+                                </div>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Native</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">UI/UX Design</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Figma</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Mock Flow</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Wix Studio</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Miro</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-               <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Framer</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="window.location.href='#projects'"
-      />
+        <div class="scroll-btn">
+            <a href="#projects" aria-label="Scroll to Projects section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Group 4.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/Group 4.jpg" alt="Habit Tracker App" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>Mobile App</span>
+                                <span>UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Habit Tracker App</h2>
+                    <p class="project-description">A mobile application designed to help users build and maintain good habits through intuitive tracking and visual feedback.</p>
+                    <div class="btn-container">
+                        <a href="https://github.com/SamadhiPathirathna/Habit-Tracker.git" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-color-2 project-btn">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                        <a href="https://drive.google.com/file/d/1n15qs-UTC_5w1Lzopl0XvipmB-fYgqZv/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fas fa-eye"></i> Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/Group 3.jpg" alt="Samudra Bookshop Redesign" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>UI Redesign</span>
+                                <span>Case Study</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Samudra Bookshop Redesign</h2>
+                    <p class="project-description">A complete redesign of the Samudra Bookshop website with focus on improved user experience and modern interface design.</p>
+                    <div class="btn-container">
+                        <a href="https://www.figma.com/proto/F2KKW0pslgx8UDfRYLD9bF/Samudra-BookShop?node-id=1-461&t=ucKjOfJLXf7FOFv3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">
+                            <i class="fab fa-figma"></i> Prototype
+                        </a>
+                        <a href="https://drive.google.com/file/d/12pPP_vNSrgAfcdwkADdmbFoKgoMvnzTa/view?usp=drive_link"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fas fa-file-alt"></i> Case Study
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/Green.jpg" alt="Advanced Figma Prototypes" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>Prototyping</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Advanced Figma Prototypes</h2>
+                    <p class="project-description">A collection of advanced interactive prototypes created in Figma, showcasing complex interactions and animations.</p>
+                    <div class="btn-container">
+                        <a href="https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-2350&t=efdgiONShzNrtOyp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">
+                            <i class="fas fa-shopping-basket"></i> Grocery
+                        </a>
+                        <a href="https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-17799&t=7TUlZyGB8TRcylQI-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A15458&starting-point-node-id=1%3A17788"
+                            target="_blank" rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fas fa-tshirt"></i> Clothing
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Habit Tracker App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SamadhiPathirathna/Habit-Tracker.git'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/1n15qs-UTC_5w1Lzopl0XvipmB-fYgqZv/view?usp=drive_link'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Group 3.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Recreation of Samudra Bookshop</h2><br/><br/>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.figma.com/proto/F2KKW0pslgx8UDfRYLD9bF/Samudra-BookShop?node-id=1-461&t=ucKjOfJLXf7FOFv3-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'"
-              >
-              Figma
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/file/d/12pPP_vNSrgAfcdwkADdmbFoKgoMvnzTa/view?usp=drive_link'"
-              >
-                Case Study
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Green.jpg"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Advance Figma Prototype</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-2350&t=efdgiONShzNrtOyp-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1'"
-              >
-                Grocery App
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-17799&t=7TUlZyGB8TRcylQI-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A15458&starting-point-node-id=1%3A17788'"
-              >
-                Clothing App
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/2.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/2.jpg" alt="Cosmetic Website" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>Web Design</span>
+                                <span>Wix Studio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Cosmetic Website</h2>
+                    <p class="project-description">A modern e-commerce website for a cosmetics brand, featuring product showcases and a streamlined shopping experience.</p>
+                    <div class="btn-container">
+                        <a href="https://samadhipathirathna.wixstudio.com/cosmatic" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fas fa-globe"></i> Live Site
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/3.webp" alt="Movie Recommendation System" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>Full Stack</span>
+                                <span>Algorithm</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+                    <p class="project-description">An intelligent system that analyzes user preferences to suggest personalized movie recommendations.</p>
+                    <div class="btn-container">
+                        <a href="https://github.com/SamadhiPathirathna/Movie-Recommendation.git" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="details-container color-container project-card">
+                    <div class="article-container project-image-container">
+                        <img src="./assets/coffee shop.png" alt="Coffee Shop Website" class="project-img" />
+                        <div class="project-overlay">
+                            <div class="project-categories">
+                                <span>Web Design</span>
+                                <span>Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Coffee Shop Website</h2>
+                    <p class="project-description">A responsive website for a coffee shop with a focus on aesthetic design and intuitive navigation.</p>
+                    <div class="btn-container">
+                        <a href="https://samadhipathirathna.github.io/Coffee-Shop/" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-color-1 project-btn">
+                            <i class="fas fa-globe"></i> Live Site
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Cosmatice Website</h2><br/><br/>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://samadhipathirathna.wixstudio.com/cosmatic'"
-              >
-                wixstudio
-              </button>
-              
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/3.webp"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div><br/>
-            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2><br/>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SamadhiPathirathna/Movie-Recommendation.git'"
-              >
-              Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/coffee shop.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Coffee Shop Webiste</h2><br/>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://samadhipathirathna.github.io/Coffee-Shop/'"
-              >
-                Github
-              </button>
-             
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="window.location.href='#contact'"
-      />
+        <div class="scroll-btn">
+            <a href="#contact"
+            aria-label="Scroll to Contact section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:samadhipathirathna@gmail.com">samadhipathirathna@gmail.com</a></p>
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-container">
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <i class="fas fa-envelope contact-icon email-icon"></i>
+                    <p><a href="mailto:samadhipathirathna@gmail.com">samadhipathirathna@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <p><a href="https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <p>Sri Lanka</p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-color-1">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://wwww.linkedin.com/in/samadhi-pathirathna-a770b426a/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-name">Samadhi Pathirathna</span>
+                <span class="logo-title">UI/UX Designer & Frontend Developer</span>
+            </div>
+            <nav class="footer-nav">
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/SamadhiPathirathna" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:samadhipathirathna@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <p class="copyright">Copyright &copy; <span id="current-year">2025</span> Samadhi Pathirathna. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-  </body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.intro-animation', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('.about-image', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.about-details-container', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.skill-section', { delay: 600, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.project-card', { delay: 600, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.contact-form-container', { delay: 600, origin: 'bottom' });
+
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').textContent = currentYear;
+
+        function handleKeyDown(event) {
+            if (event.key === 'Enter') {
+                toggleMenu();
+            }
+        }
+    </script>
+</body>
+
 </html>
