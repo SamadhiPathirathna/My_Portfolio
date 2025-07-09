@@ -313,11 +313,16 @@ nav {
   margin: 0.2rem 0.3rem 0.3rem 0;
   display: inline-block;
 }
-
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
 .project-link {
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
+  
 }
 
 .project-link:hover {
