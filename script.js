@@ -34,24 +34,30 @@ function typeTitles() {
 }
 if (animatedTitles) typeTitles();
 
-// --- Project Filter Buttons ---
-const filterButtons = document.querySelectorAll(".filter-btn");
-const projectCards = document.querySelectorAll(".project-card");
+// Filter project cards
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const category = button.getAttribute("data-category");
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Remove active class from all buttons
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
 
-    filterButtons.forEach((btn) => btn.classList.remove("active"));
-    button.classList.add("active");
+    const selectedCategory = button.getAttribute('data-category');
 
-    projectCards.forEach((card) => {
-      const cardCategory = card.getAttribute("data-category");
-      card.style.display =
-        category === "all" || cardCategory === category ? "flex" : "none";
+    projectCards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+
+      if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
     });
   });
 });
+
 
 // --- Project Tag Collapse/Expand ---
 document.querySelectorAll(".project-tags").forEach((tagContainer) => {
