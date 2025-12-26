@@ -1,10 +1,10 @@
 // --- Animated Profile Titles ---
 const titles = [
-  "Software Engineer",
-  "Full Stack Developer",
-  "UI/UX Designer",
   "Data Enthusiast",
   "Business Analyst",
+  "Software Engineer",
+  "Full Stack Developer",
+  
 ];
 
 let titleIndex = 0;
