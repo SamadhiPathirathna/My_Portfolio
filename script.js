@@ -1,8 +1,8 @@
 // --- Animated Profile Titles ---
 const titles = [
-  "Data Enthusiast",
+  "Data Analyst",
   "Business Analyst",
-  "Software Engineer",
+  "Business Intelligence Analyst",
   "Full Stack Developer",
   
 ];
