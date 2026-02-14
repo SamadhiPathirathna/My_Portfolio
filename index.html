@@ -9,288 +9,248 @@
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-  <header>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="navbar">
+    <div class="logo">Samadhi Pathirathna</div>
     <nav>
-      <div class="logo">
-        <span class="logo-name">Samadhi Pathirathna</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#profile">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#profile">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <button id="themeToggle"><i class="fas fa-adjust"></i></button>
   </header>
 
-  <section id="profile">
-    <div class="profile-pic-container">
-      <img src="assets/1.jpg" alt="Profile" class="profile-img"/>
-    </div>
-    <div class="profile-text">
-      <h1>Hello, I'm <span class="highlight">Samadhi Pathirathna</span></h1>
-      <h2>
-        <span id="animated-titles"></span>
-      </h2>
-      <p>
-        IT graduate passionate in building creative and impactful solutions.
-      </p>
-      <div class="profile-socials">
-        <a href="https://github.com/SamadhiPathirathna" target="_blank" title="GitHub"><img src="assets/github.png" alt="GitHub" class="icon"></a>
-        <a href="https://drive.google.com/file/d/1VPoFTlGJCHTJtFZa0vS4JHDKk01wSTlV/view?usp=drive_link" target="_blank" class="cv-btn">Download CV</a>
+  <!-- ===================== HERO / PROFILE ===================== -->
+  <section id="profile" class="hero">
+    <div>
+      <div class="intro">Hello, I'm</div>
+      <h1>Samadhi Pathirathna</h1>
+      <h3><span id="animated-titles"></span></h3>
+      <p class="hero-desc">Passionate about building creative and impactful solutions through analytics and software development.</p>
+      <div class="hero-actions">
+        <a href="https://drive.google.com/file/d/1VPoFTlGJCHTJtFZa0vS4JHDKk01wSTlV/view?usp=drive_link" target="_blank" class="btn-primary">Download CV</a>
+        <a href="https://github.com/SamadhiPathirathna" target="_blank" class="btn-secondary">GitHub</a>
       </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:samadhipathirathna@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="profile-img-wrapper">
+      <img src="assets/1.jpg" alt="Profile Image"/>
     </div>
   </section>
 
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about-profile">
+  <h2 class="section-title center">Professional <span>Profile</span></h2>
+  <p class="profile-desc center">
+    BSc Information Technology graduate with expertise in full-stack development, data analytics, 
+    and business intelligence. Skilled in building scalable web applications and creating interactive dashboards 
+    to transform complex data into actionable insights.
+     Passionate about leveraging technology to solve real-world problems and drive informed decision-making.
+  </p>
 
-  <section id="skills">
-  <h2 class="skills-title">Skills & Tools</h2>
-  <p class="skills-subtitle">Things I work with to build awesome digital experiences</p>
-
-  <div class="skills-grid two-rows">
-    <!-- Frontend -->
-    <div class="skill-block frontend">
-      <h3>Frontend</h3>
-      <ul>
-        <li><i class="fab fa-react"></i> React</li>
-        <li><i class="fab fa-html5"></i> HTML5</li>
-        <li><i class="fab fa-css3-alt"></i> CSS3</li>
-        <li><i class="fab fa-js-square"></i> JavaScript</li>
-        <li><i class="fab fa-figma"></i> Figma</li>
-      </ul>
+  <div class="profile-stats">
+    <div class="stat-card">
+      <h3>10+</h3>
+      <p>Analytics Projects</p>
     </div>
-
-    <!-- Backend -->
-    <div class="skill-block backend">
-      <h3>Backend</h3>
-      <ul>
-        <li><i class="fab fa-node-js"></i> Node.js</li>
-        <li><i class="fas fa-server"></i> Express</li>
-        <li><i class="fas fa-database"></i> MongoDB</li>
-        <li><i class="fab fa-python"></i> Python</li>
-        <li><i class="fab fa-java"></i> Java</li>
-      </ul>
+    <div class="stat-card">
+      <h3>5+</h3>
+      <p>BI Tools Used</p>
     </div>
-
-    <!-- Analytics -->
-    <div class="skill-block analytics">
-      <h3>Data & Analytics</h3>
-      <ul>
-        <li><i class="fas fa-chart-line"></i> Power BI</li>
-        <li><i class="fas fa-file-excel"></i> Excel</li>
-        <li><i class="fas fa-database"></i> SQL</li>
-        <li><i class="fas fa-table"></i> Pandas</li>
-        <li><i class="fas fa-project-diagram"></i> DAX</li>
-      </ul>
-    </div>
-
-    <!-- Other -->
-    <div class="skill-block other">
-      <h3>Other</h3>
-      <ul>
-        <li><i class="fab fa-git-alt"></i> Git / GitHub</li>
-        <li><i class="fas fa-vial"></i> Selenium</li>
-        <li><i class="fas fa-cogs"></i> Agile</li>
-        <li><i class="fas fa-pencil-ruler"></i> UI/UX</li>
-        <li><i class="fas fa-tasks"></i> Trello</li>
-      </ul>
+    <div class="stat-card">
+      <h3>1+</h3>
+      <p>Years Industry Exposure</p>
     </div>
   </div>
 </section>
 
 
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="filter-container">
-      <button class="filter-btn active" data-category="all">All</button>
-      <button class="filter-btn" data-category="full stack">Full-Stack</button>
-      <button class="filter-btn" data-category="data">Data Analytics</button>
-      <button class="filter-btn" data-category="design">Design</button>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card" data-category="full stack">
-        <img src="assets/Group 2.jpg" alt="Habit Tracker App" class="project-img"/>
-        <div class="project-content">
-          <h3>Habit Tracker App</h3>
-          <p>Mobile app to help users build and maintain good habits through intuitive tracking and visual feedback.</p>
-          <div class="project-tags">
-            <span class="project-tag">React Native</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Express</span>
-            <span class="project-tag">MongoDB</span>
-            <span class="project-tag">Flask</span>
-            <span class="project-tag">Random Forest</span>
-            <span class="project-tag">UI/UX</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/SamadhiPathirathna/Habit-Tracker.git" class="project-link" target="_blank">Github</a>
-          <a href="https://drive.google.com/file/d/1n15qs-UTC_5w1Lzopl0XvipmB-fYgqZv/view?usp=drive_link" class="project-link" target="_blank">Demo</a>
-          </div>
-          
-        </div>
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section">
+    <h2 class="section-title center">Skills & Tools</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-react"></i>
+        <h4>Frontend</h4>
+        <ul>
+          <li>React</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Figma</li>
+        </ul>
       </div>
-      <div class="project-card" data-category="full stack">
-        <img src="assets/spend-iphone.png" alt="Habit Tracker App" class="project-img"/>
-        <div class="project-content">
-          <h3>Money Tracker App</h3>
-          <p>Developed a responsive finance tracker with filters, Chart.js dashboards, and CSV/PDF exports. </p>
-          <div class="project-tags">
-            <span class="project-tag">React.js</span>
-            <span class="project-tag">Node.js</span>
-            <span class="project-tag">Express</span>
-            <span class="project-tag">MongoDB</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/SamadhiPathirathna/Money_Tracker.git" class="project-link" target="_blank">Github</a>
-          </div>
-          
-        </div>
+      <div class="skill-card">
+        <i class="fas fa-server"></i>
+        <h4>Backend</h4>
+        <ul>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
       </div>
-       <div class="project-card" data-category="full stack">
-        <img src="assets/chat..jpg" alt="Habit Tracker App" class="project-img"/>
-        <div class="project-content">
-          <h3>Food Suggestion Chatbot</h3>
-          <p>A food recommendation chatbot that helps users discover meal suggestions for breakfast, lunch, dinner, snacks, 
-            or a full-day meal plan.  </p>
-          <div class="project-tags">
-            <span class="project-tag">HTML</span>
-            <span class="project-tag">CSS</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">Flask</span>
-            <span class="project-tag">Spoonacular API</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/SamadhiPathirathna/Food-chatbot.git" class="project-link" target="_blank">Github</a>
-          </div>
-          
-        </div>
+      <div class="skill-card">
+        <i class="fas fa-chart-line"></i>
+        <h4>Data & Analytics</h4>
+        <ul>
+          <li>Power BI</li>
+          <li>SQL</li>
+          <li>Excel</li>
+          <li>Pandas</li>
+          <li>DAX</li>
+        </ul>
       </div>
-      <div class="project-card" data-category="data">
-        <img src="assets/tableau1.jpg" alt="Power BI Dashboard" class="project-img"/>
-        <div class="project-content">
-          <h3>Airbnb Sales Dashboard</h3>
-          <p>Analyzed revenue patterns, occupancy trends, and property performance with dynamic filters.</p>
-          <div class="project-tags">
-            <span class="project-tag">Tableau</span>
-            <span class="project-tag">Data Cleaning</span>
-            <span class="project-tag">Dashboard</span>
-          </div>
-          <div class="project-links">
-            <a href="https://public.tableau.com/app/profile/samadhi.pathirathna/viz/AirBnBSalesDashboard/Dashboard2?publish=yes" class="project-link" target="_blank">View Dashboard</a>
-          </div>
-          
-        </div>
-      </div>
-      <div class="project-card" data-category="data">
-        <img src="assets/powerbi1.webp" alt="Power BI Dashboard" class="project-img"/>
-        <div class="project-content">
-          <h3>Power BI Dashboard</h3>
-          <p>Interactive dashboard to track key business metrics using Power BI and DAX calculations.</p>
-          <div class="project-tags">
-            <span class="project-tag">Power BI</span>
-            <span class="project-tag">Data Cleaning</span>
-            <span class="project-tag">Dashboard</span>
-            <span class="project-tag">DAX</span>
-          </div>
-          <div class="project-links">
-            
-          <a href="https://github.com/SamadhiPathirathna/Data-Professional-Breakdown.git" class="project-link" target="_blank">View Dashboard</a>
-        </div>
-          </div>
-        
-      </div>
-      <div class="project-card" data-category="design">
-        <img src="assets/wordpress.jpg" alt="Movie Recommendation System" class="project-img"/>
-        <div class="project-content">
-          <h3>Brew & Bite – Mock Café Website</h3>
-          <p>Designed and developed a fully functional mock café website 
-            using WordPress.</p>
-          <div class="project-tags">
-            <span class="project-tag"> WordPress</span>
-              <span class="project-tag">Prototype</span>
-            <span class="project-tag">Web develpoment</span>
-            <span class="project-tag">UI/UX</span>
-          </div>
-          <div class="project-links">
-            <a href="https://bitebrew.wordpress.com/" class="project-link" target="_blank">View Code</a>
-        </div>
-          </div>
-          
-      </div>
-      <div class="project-card" data-category="design">
-        <img src="assets/Group 3.jpg" alt="Figma Prototypes" class="project-img"/>
-        <div class="project-content">
-          <h3>Figma Prototypes</h3>
-          <p>Advanced interactive prototypes in Figma, showcasing complex interactions and animations.</p>
-          <div class="project-tags">
-            <span class="project-tag">Figma</span>
-             <span class="project-tag">Prototype</span>
-            <span class="project-tag">UI/UX</span>
-          </div>
-          <div class="project-links">
-            <a href="https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-2350&t=UnlbnYwe3uVAuNc4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="project-link" target="_blank" >Demo</a>
-        </div>
-
-          </div>
-          
-      </div>
-      <div class="project-card" data-category="design">
-        <img src="assets/2.jpg" alt="Cosmetics E-commerce" class="project-img"/>
-        <div class="project-content">
-          <h3>Cosmetics E-commerce</h3>
-          <p>Modern e-commerce website for a cosmetics brand, featuring product showcases and streamlined shopping.</p>
-          <div class="project-tags">
-            <span class="project-tag">WixStudio</span>
-            <span class="project-tag">Prototype</span>
-            <span class="project-tag">UI/UX</span>
-          </div>
-          <div class="project-links">
-          <a href="https://samadhipathirathna.wixstudio.com/cosmatic" class="project-link" target="_blank">Website</a>
-        </div>
-          </div>
-          
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h4>Other Tools</h4>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>Selenium</li>
+          <li>Agile</li>
+          <li>UI/UX</li>
+          <li>Trello</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="text" name="subject" placeholder="Subject" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-      <div id="form-status"></div>
-    </form>
-    <div class="contact-info">
-      <span><i class="fas fa-envelope"></i> samadhipathirathna@gmail.com</span>
-      <span><i class="fas fa-map-marker-alt"></i> Sri Lanka</span>
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section">
+    <h2 class="section-title center">Projects</h2>
+
+    <div class="project-tabs">
+      <button class="tab-btn active" data-tab="full-stack">Full Stack</button>
+      <button class="tab-btn" data-tab="data">Analytics</button>
+      <button class="tab-btn" data-tab="design">Design</button>
+    </div>
+
+    <div class="tab-content active" id="full-stack">
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/Group 2.jpg" alt="Habit Tracker App"/>
+          <h4>MindMap</h4>
+          <p>DEnhanced memory via habit tracking and machine learning. Delivered personalized activity-based recommendations
+             with 83% prediction accuracy using Random Forest.</p>
+          <a href="https://github.com/SamadhiPathirathna/Habit-Tracker.git" class="link-custom" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/spend-iphone.png" alt="Money Tracker App"/>
+          <h4>Money Tracker App</h4>
+          <p>Built a responsive web app to monitor income/expenses with dynamic filters, interactive charts, 
+            and exportable reports (PDF/CSV). Focused on clean UI/UX, robust APIs, and actionable visual insights.</p>
+          <a href="https://github.com/SamadhiPathirathna/Money_Tracker.git" class="link-custom" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/inventory-management-system.webp" alt="E-commerce Inventory System"/>
+          <h4>E-commerce inventory system   </h4>
+          <p>A group project of a vibrant Web Application designed for CTC store PVT (LTD) to manage customer, employee, 
+            and inventory details, generate bills, and manage expenses for updated and sold stocks. .</p>
+          <a href="https://github.com/SLIITITP/y2_s2_wd_it_03-wd_b03_itp_06.git" class="link-custom" target="_blank">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/chat..jpg" alt="Food Suggestion Chatbot"/>
+          <h4>Food Suggestion Chatbot</h4>
+          <p>Created a friendly AI chatbot suggesting meals for any time of day, complete with nutrition info, voice input, 
+            favorites, and light/dark mode. Enhanced user experience through interactivity and personalization.</p>
+          <a href="https://github.com/SamadhiPathirathna/Food-chatbot.git" class="link-custom" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="data">
+      <div class="projects-grid">
+         <div class="project-card">
+          <img src="assets/powerbi1.webp" alt="Power BI Dashboard"/>
+          <h4>Power BI Dashboard</h4>
+          <p>Built an interactive sales performance dashboard using Power BI.
+          Implemented DAX measures, data modeling, and dynamic filtering 
+          to track revenue trends and KPI performance.</p>
+          <a href="https://github.com/SamadhiPathirathna/Data-Professional-Breakdown.git" class="link-custom" target="_blank">Github</a>
+        </div>
+         <div class="project-card">
+          <img src="assets/covid.jpg" alt="Power BI Dashboard"/>
+          <h4>SQL Covid Data Analysis</h4>
+          <p>Cleaned and analyzed global COVID datasets using advanced SQL 
+          queries including joins, CTEs, and window functions to identify 
+          infection trends and regional comparisons.</p>
+          <a href="https://github.com/SamadhiPathirathna/SQL-Project.git" class="link-custom" target="_blank">Github</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/tableau1.jpg" alt="Airbnb Sales Dashboard"/>
+          <h4>Airbnb Sales Dashboard</h4>
+          <p>Analyzed occupancy rates, pricing patterns, and seasonal revenue 
+          variations using Tableau dashboards to highlight revenue drivers.</p>
+          <a href="https://public.tableau.com/app/profile/samadhi.pathirathna/viz/AirBnBSalesDashboard/Dashboard2?publish=yes" class="link-custom" target="_blank">View Dashboard</a>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="tab-content" id="design">
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/wordpress.jpg" alt="Brew & Bite – Mock Café Website"/>
+          <h4>Brew & Bite – Mock Café Website</h4>
+          <p>Designed and developed a fully functional mock café website using WordPress. </p>
+          <a href="https://bitebrew.wordpress.com/" class="link-custom" target="_blank">View Website</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/Green.jpg" alt="Brew & Bite – Mock Café Website"/>
+          <h4>Recreate Samudra Books and Publications</h4>
+          <p>Recreated the web application, changing the UI and UX of the primary interfaces of the current UI of the online website.</p>
+          <a href="https://www.figma.com/design/F2KKW0pslgx8UDfRYLD9bF/Samudra-BookShop?node-id=0-1&p=f&t=vujLQpjrjfGxjEQK-0" class="link-custom" target="_blank">Figma</a>
+          <a href="https://app.mockflow.com/view/MPqHmh22Gh#/page/D90a0209de71f711a0d03b27b07040a77/mode/view" class="link-custom" target="_blank">Mock Flow</a>
+          <a href="https://drive.google.com/file/d/12pPP_vNSrgAfcdwkADdmbFoKgoMvnzTa/view?usp=drive_link" class="link-custom" target="_blank">Case Study</a>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/Group 3.jpg" alt="Figma Prototypes"/>
+          <h4>Figma Prototypes</h4>
+          <p>Advanced interactive prototypes in Figma with complex interactions and animations.</p>
+          <a href="https://www.figma.com/proto/wb4fvs2EGivbZ7x5svixpa/Advance-Prototyping?node-id=1-2350&t=UnlbnYwe3uVAuNc4-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1" class="link-custom" target="_blank">Demo</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/2.jpg" alt="Cosmetics E-commerce"/>
+          <h4>Cosmetics E-commerce</h4>
+          <p>Modern e-commerce site for cosmetics brand with product showcases and checkout system.</p>
+          <a href="https://samadhipathirathna.wixstudio.com/cosmatic" class="link-custom" target="_blank">Website</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section">
+    <h2 class="section-title center">Contact <span>Me</span></h2>
+    <div class="contact-box">
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required/>
+        <input type="email" name="email" placeholder="Your Email" required/>
+        <input type="text" name="subject" placeholder="Subject" required/>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <div id="form-status"></div>
+      </form>
+      <div class="contact-wrapper">
+        <div class="contact-item"><i class="fas fa-envelope"></i> <a href="mailto:samadhipathirathna@gmail.com">samadhipathirathna@gmail.com</a></div>
+        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> <span>Sri Lanka</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">Samadhi Pathirathna</div>
-      <div class="footer-nav">
-        <a href="#profile">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/samadhi-pathirathna-a770b426a/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/SamadhiPathirathna" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="mailto:samadhipathirathna@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-    </div>
-    <div class="copyright">
-      Samadhi Pathirathna &copy; 2025
-    </div>
+    <p>Samadhi Pathirathna &copy; 2026</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
